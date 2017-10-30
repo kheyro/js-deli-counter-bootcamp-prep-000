@@ -24,7 +24,7 @@ function currentLine(katzDeliLine) {
     for (let i = 0; i < katzDeliLine.length ; i++) {
       queue += ` ${i + 1}. ${katzDeliLine[i]},` ;
     }
-    return `The line is currently:${queue}`;
+    return `The line is currently:${queue.slice(0, -1)}`;
   } else {
     return "The line is currently empty."
   }
