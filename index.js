@@ -2,7 +2,7 @@ var katzDeli = [];
 
 function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name);
-  return katzDeliLine.length;
+  return `Welcome, Ada. You are number ${katzDeliLine.length} in line.`;
 }
 
 function nowServing(katzDeliLine) {
