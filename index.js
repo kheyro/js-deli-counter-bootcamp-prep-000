@@ -6,8 +6,8 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function nowServing(katzDeliLine) {
-  var nowServing;
-  
+  var nowServing = "";
+
   if (katzDeliLine[0]) {
     nowServing = katzDeliLine[0];
     katzDeliLine.shift();
@@ -18,8 +18,8 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  var queue;
-  
+  var queue = "";
+
   if (katzDeliLine.length > 0) {
     for (let i = 0; i < katzDeliLine.length ; i++) {
       queue += ` ${i}. ${katzDeliLine[i]},` ;
